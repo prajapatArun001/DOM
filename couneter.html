@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="increment" style="background-color: hotpink;">
+            <button class="add" >
+                <p>+</p>
+            </button>
+        </div>
+        <div class="count">
+            <h1><span id="c"></span></h1>
+        </div>
+        <div class="decrement">
+            <button class="sub">
+                <p>-</p>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let count = 0;
+        let inc = document.getElementsByClassName("add");
+        inc.addEventListener("click", function(){
+            count++;
+        });
+        let display = document.getElementsByClassName("disp");
+        display.addEventListener("click", function(){
+            document.getElementById("c").innerHTML = count;
+        });
+        let dec = document.getElementsByClassName("sub");
+        dec.addEventListener("click", function(){
+            count--;
+        });
+    </script>
+</body>
+</html>
