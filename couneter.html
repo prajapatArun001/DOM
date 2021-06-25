@@ -7,34 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <div class="increment" style="background-color: hotpink;">
-            <button class="add" >
-                <p>+</p>
-            </button>
-        </div>
-        <div class="count">
-            <h1><span id="c"></span></h1>
-        </div>
-        <div class="decrement">
-            <button class="sub">
-                <p>-</p>
-            </button>
-        </div>
-    </div>
+        <button id="add"> <p>+</p> </button>
+        <h1 id = "p" >0</h1>
+        <button id="sub"> <p>-</p> </button>
+    
     <script type="text/javascript">
-        let count = 0;
-        let inc = document.getElementsByClassName("add");
+        let inc = document.querySelector("#add");
+        let dec = document.querySelector("#sub");
+        let p = document.querySelector("#p");
+
         inc.addEventListener("click", function(){
-            count++;
+            let oldValue = Number(p.innerText);
+            let newValue = oldValue + 1;
+            p.innerText = newValue;
         });
-        let display = document.getElementsByClassName("disp");
-        display.addEventListener("click", function(){
-            document.getElementById("c").innerHTML = count;
-        });
-        let dec = document.getElementsByClassName("sub");
+
         dec.addEventListener("click", function(){
-            count--;
+            let oldValue = Number(p.innerText);
+            let newValue = oldValue - 1;
+            p.innerText = newValue;
         });
     </script>
 </body>

@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    background-color: darkslategrey;
+}
+#inp{
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: black;
+    box-shadow: black;
+    margin: 30px;
+    padding: 20px;
+    height: 30px;
+    width: 220px;
+}
+#sub{
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: black;
+    box-shadow: black;
+    margin: 30px;
+    padding: 12px;
+    border-block-color: black;
+}
